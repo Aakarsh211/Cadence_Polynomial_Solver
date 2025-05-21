@@ -1,0 +1,22 @@
+FOX nwell_conn
+metal3_conn metal3_conn
+metal4_conn metal4_conn
+metal5_conn metal5_conn
+metal6_conn metal6_conn
+metal7_conn metal7_conn
+metal8_conn metal8_conn
+metal9_conn metal9_conn
+metal10_conn metal10_conn
+metal11_conn metal11_conn
+Oxide pdiff_conn ndiff_conn
+pwell pwell
+metal2_conn metal2_conn
+metal1_conn metal1_conn
+poly_conn poly_conn
+ndiff_conn ndiff_conn
+pdiff_conn pdiff_conn
+nwell_conn nwell_conn
+Via1 Via1
+cont_poly cont_poly
+cont_pdiff cont_pdiff_metal1_conn_pdiff_conn
+cont_ndiff cont_ndiff_metal1_conn_ndiff_conn
