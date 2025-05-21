@@ -1,0 +1,82 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Mar 12 14:40:50 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.17-s075_1 (64bit) 03/15/2023 11:17 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.17-s075_1 NR230308-2354/21_17-UB (database version 18.20.604) {superthreading v2.17}
+#@(#)CDS: AAE 21.17-s026 (64bit) 03/15/2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.17-s025_1 () Mar 14 2023 11:00:06 ( )
+#@(#)CDS: SYNTECH 21.17-s007_1 () Feb 20 2023 06:56:35 ( )
+#@(#)CDS: CPE v21.17-s068
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s939 (64bit) Wed Nov 9 09:34:24 PST 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_lef_file {../LEF/gsclib045_tech.lef ../LEF/gsclib045_macro.lef ../LEF/gsclib045_multibitsDFF.lef ../LEF/giolib045.lef}
+set init_verilog ../Synthesized/polynomial_top.v
+set init_mmmc_file Slow.view
+set init_io_file polynomial.io.prov
+init_design
+zoomBox -0.02350 -0.03250 0.08350 0.06350
+zoomBox -0.08550 -0.09450 0.12050 0.09000
+pan 0.07800 0.07000
+zoomBox -0.11300 -0.13750 0.28250 0.21650
+zoomBox -0.32700 -0.37050 0.43050 0.30750
+pan 0.37600 0.29850
+zoomBox 0.04900 -0.02850 0.69300 0.54800
+zoomBox -0.40000 -0.57650 1.05150 0.72300
+zoomBox -1.42000 -1.81100 1.85200 1.11800
+pan 1.28700 1.23900
+zoomBox -1.99400 -2.24450 5.38100 4.35750
+zoomBox -10.49350 -9.51800 12.51250 11.07750
+zoomBox -38.37400 -34.24450 33.39100 30.00050
+zoomBox -127.70500 -113.34400 96.15800 87.06100
+pan 128.58350 113.40500
+zoomBox -227.03350 -217.66150 471.28150 407.47950
+zoomBox -962.24350 -895.43400 1216.06450 1054.61650
+pan 574.87050 -9.27650
+zoomBox -209.41700 -775.81050 1642.14500 881.73250
+zoomBox -100.07200 -584.54650 1473.75600 824.36550
+pan -30.54000 -431.53850
+zoomBox -903.76850 -1654.29300 2643.24450 1521.04100
+zoomBox -1536.47650 -2368.07200 3372.88450 2026.85400
+zoomBox -944.30500 -1590.84650 2602.70850 1584.48750
+zoomBox -713.03800 -1285.93200 2301.92350 1413.10200
+zoomBox -516.46100 -1026.75450 2046.25650 1267.42450
+zoomBox -349.37050 -806.45400 1828.93950 1143.59850
+zoomBox -207.34350 -619.19800 1644.22000 1038.34650
+getIoFlowFlag
+setFPlanRowSpacingAndType 1 2
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.1 0.7 20.0 20.0 20.0 20.0
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal1 bottom Metal1 left Metal2 right Metal2} -width {top 5 bottom 5 left 5 right 5} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 2 bottom 2 left 2 right 2} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal1 bottom Metal1 left Metal2 right Metal2} -width {top 5 bottom 5 left 5 right 5} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 2 bottom 2 left 2 right 2} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+zoomBox -128.31900 -433.29000 1579.91650 1095.94550
+zoomBox -65.00600 -259.92500 1386.99400 1039.92500

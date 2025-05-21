@@ -1,0 +1,355 @@
+# //  ModelSim SE-64 6.5b May 21 2009 Linux 4.18.0-477.27.1.el8_8.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/simulation_pad/pads_SS_s1vg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vital_primitives
+# -- Compiling package prim
+# -- Compiling package body prim
+# -- Loading package prim
+# -- Loading package prim
+# -- Compiling entity paddb
+# -- Compiling architecture behavioral of paddb
+# -- Compiling entity paddi
+# -- Compiling architecture behavioral of paddi
+# -- Compiling entity paddo
+# -- Compiling architecture behavioral of paddo
+# -- Compiling entity paddoz
+# -- Compiling architecture behavioral of paddoz
+# -- Compiling entity ioringdb
+# -- Compiling architecture behavioral of ioringdb
+# -- Compiling entity ioringdi
+# -- Compiling architecture behavioral of ioringdi
+# -- Compiling entity ioringdo
+# -- Compiling architecture behavioral of ioringdo
+# -- Compiling entity ioringdoz
+# -- Compiling architecture behavioral of ioringdoz
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# ** Error: (vcom-11) Could not find work.polynomial_cfg.
+# ** Error: /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd(26): (vcom-1195) Cannot find expanded name "work.polynomial_cfg".
+# ** Error: /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd(26): Unknown expanded name.
+# ** Error: /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd(28): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_cfg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package polynomial_cfg
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial
+# -- Compiling architecture reference403 of polynomial
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top
+# -- Compiling architecture behavioral of polynomial_top
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top_tb
+# -- Compiling architecture behavioral of polynomial_top_tb
+# ** Warning: [4] /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd(14): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+vsim work.polynomial_top_tb
+# vsim work.polynomial_top_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.polynomial_cfg
+# Loading work.polynomial_top_tb(behavioral)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading work.prim(body)
+# Loading work.paddi(behavioral)#1
+# Loading work.paddo(behavioral)#1
+run
+add wave \
+{sim:/polynomial_top_tb/clock_tb } 
+add wave \
+{sim:/polynomial_top_tb/valid_in_tb } 
+add wave \
+{sim:/polynomial_top_tb/reset_tb } 
+add wave \
+{sim:/polynomial_top_tb/valid_out_tb } 
+add wave \
+{sim:/polynomial_top_tb/x_tb } 
+add wave \
+{sim:/polynomial_top_tb/y_tb } 
+run
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/simulation_pad/pads_SS_s1vg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vital_primitives
+# -- Compiling package prim
+# -- Compiling package body prim
+# -- Loading package prim
+# -- Loading package prim
+# -- Compiling entity paddb
+# -- Compiling architecture behavioral of paddb
+# -- Compiling entity paddi
+# -- Compiling architecture behavioral of paddi
+# -- Compiling entity paddo
+# -- Compiling architecture behavioral of paddo
+# -- Compiling entity paddoz
+# -- Compiling architecture behavioral of paddoz
+# -- Compiling entity ioringdb
+# -- Compiling architecture behavioral of ioringdb
+# -- Compiling entity ioringdi
+# -- Compiling architecture behavioral of ioringdi
+# -- Compiling entity ioringdo
+# -- Compiling architecture behavioral of ioringdo
+# -- Compiling entity ioringdoz
+# -- Compiling architecture behavioral of ioringdoz
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_cfg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package polynomial_cfg
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial
+# -- Compiling architecture reference403 of polynomial
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top
+# -- Compiling architecture behavioral of polynomial_top
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top_tb
+# -- Compiling architecture behavioral of polynomial_top_tb
+# ** Warning: [4] /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd(14): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+quit -sim
+vsim work.polynomial_top_tb
+# vsim work.polynomial_top_tb 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.polynomial_cfg
+# Loading work.polynomial_top_tb(behavioral)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading work.prim(body)
+# Loading work.paddi(behavioral)#1
+# Loading work.paddo(behavioral)#1
+add wave \
+{sim:/polynomial_top_tb/clock_tb } \
+{sim:/polynomial_top_tb/valid_in_tb } \
+{sim:/polynomial_top_tb/reset_tb } \
+{sim:/polynomial_top_tb/valid_out_tb } \
+{sim:/polynomial_top_tb/x_tb } \
+{sim:/polynomial_top_tb/y_tb } 
+run
+quit -sim
+vdel -all -lib work
+vlib work
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/simulation_pad/pads_SS_s1vg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vital_primitives
+# -- Compiling package prim
+# -- Compiling package body prim
+# -- Loading package prim
+# -- Loading package prim
+# -- Compiling entity paddb
+# -- Compiling architecture behavioral of paddb
+# -- Compiling entity paddi
+# -- Compiling architecture behavioral of paddi
+# -- Compiling entity paddo
+# -- Compiling architecture behavioral of paddo
+# -- Compiling entity paddoz
+# -- Compiling architecture behavioral of paddoz
+# -- Compiling entity ioringdb
+# -- Compiling architecture behavioral of ioringdb
+# -- Compiling entity ioringdi
+# -- Compiling architecture behavioral of ioringdi
+# -- Compiling entity ioringdo
+# -- Compiling architecture behavioral of ioringdo
+# -- Compiling entity ioringdoz
+# -- Compiling architecture behavioral of ioringdoz
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_cfg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package polynomial_cfg
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial
+# -- Compiling architecture reference403 of polynomial
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top
+# -- Compiling architecture behavioral of polynomial_top
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top_tb
+# -- Compiling architecture behavioral of polynomial_top_tb
+# ** Warning: [4] /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd(14): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+vsim work.polynomial_top_tb
+# vsim work.polynomial_top_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.polynomial_cfg
+# Loading work.polynomial_top_tb(behavioral)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading work.prim(body)
+# Loading work.paddi(behavioral)#1
+# Loading work.paddo(behavioral)#1
+add wave \
+{sim:/polynomial_top_tb/clock_tb } \
+{sim:/polynomial_top_tb/valid_in_tb } \
+{sim:/polynomial_top_tb/reset_tb } \
+{sim:/polynomial_top_tb/valid_out_tb } \
+{sim:/polynomial_top_tb/x_tb } \
+{sim:/polynomial_top_tb/y_tb } 
+run
+run
+quit -sim
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/simulation_pad/pads_SS_s1vg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vital_timing
+# -- Loading package vital_primitives
+# -- Compiling package prim
+# -- Compiling package body prim
+# -- Loading package prim
+# -- Loading package prim
+# -- Compiling entity paddb
+# -- Compiling architecture behavioral of paddb
+# -- Compiling entity paddi
+# -- Compiling architecture behavioral of paddi
+# -- Compiling entity paddo
+# -- Compiling architecture behavioral of paddo
+# -- Compiling entity paddoz
+# -- Compiling architecture behavioral of paddoz
+# -- Compiling entity ioringdb
+# -- Compiling architecture behavioral of ioringdb
+# -- Compiling entity ioringdi
+# -- Compiling architecture behavioral of ioringdi
+# -- Compiling entity ioringdo
+# -- Compiling architecture behavioral of ioringdo
+# -- Compiling entity ioringdoz
+# -- Compiling architecture behavioral of ioringdoz
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_cfg.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package polynomial_cfg
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial
+# -- Compiling architecture reference403 of polynomial
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top
+# -- Compiling architecture behavioral of polynomial_top
+vcom -reportprogress 300 -work work /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package polynomial_cfg
+# -- Compiling entity polynomial_top_tb
+# -- Compiling architecture behavioral of polynomial_top_tb
+# ** Warning: [4] /home/users/aakarsh1/ECE403_Lab3_Polynomial/source_code/polynomial_top_tb.vhd(14): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+vsim work.polynomial_top_tb
+# vsim work.polynomial_top_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.polynomial_cfg
+# Loading work.polynomial_top_tb(behavioral)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading work.prim(body)
+# Loading work.paddi(behavioral)#1
+# Loading work.paddo(behavioral)#1
+add wave \
+{sim:/polynomial_top_tb/clock_tb } \
+{sim:/polynomial_top_tb/valid_in_tb } \
+{sim:/polynomial_top_tb/reset_tb } \
+{sim:/polynomial_top_tb/valid_out_tb } \
+{sim:/polynomial_top_tb/x_tb } \
+{sim:/polynomial_top_tb/y_tb } 
+run
+run
+run
+run
+run
+run
+run
+run
+run
