@@ -51,9 +51,9 @@ Key Skills Demonstrated:
   - Power estimation and optimization
 
 - Tools:
--   Cadence Virtuoso
--   Innovus
--   ModelSim
--   CAD
+  -   Cadence Virtuoso
+  -   Innovus
+  -   ModelSim
+  -   CAD
 
 
